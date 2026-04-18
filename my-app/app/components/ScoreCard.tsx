@@ -23,7 +23,7 @@ export default function ScoreCard() {
             <div><input className="holeScore"></input>hole18</div>
             <div>
                 <h1>Current Score: </h1>
-                 
+
             </div>
             
         </div>
