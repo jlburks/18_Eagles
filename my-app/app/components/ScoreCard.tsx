@@ -1,9 +1,16 @@
+'use client';
 import './ScoreCard.css'
+import { useState } from 'react';
 
 export default function ScoreCard() {
+
+    const [strokes, setStrokes] = useState(0);
+
+    setStrokes
+
     return (
         <div className="scoreboard">
-            <div><input type="number" className="holeScore"></input>hole1</div>
+            <div><input type="number" className="holeScore" onChange={e => setStrokes(strokes => strokes + Number(e.target.value))} ></input>hole1</div>
             <div><input type="number" className="holeScore"></input>hole2</div>
             <div><input type="number" className="holeScore"></input>hole3</div>
             <div><input type="number" className="holeScore"></input>hole4</div>
@@ -21,8 +28,9 @@ export default function ScoreCard() {
             <div><input type="number" className="holeScore"></input>hole16</div>
             <div><input type="number" className="holeScore"></input>hole17</div>
             <div><input type="number" className="holeScore"></input>hole18</div>
-            <div>
-                <h1>Current Score: </h1>
+            <div >
+            <h1>Current Score: </h1>
+            <h2>{strokes}</h2>
 
             </div>
             

@@ -13,11 +13,10 @@ export default function Home() {
           height={20}
           priority
         />
+        
         <ScoreCard />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="Saira Stencil">
-            18 Eagles
-          </h1>
+          
           
             
         </div>
