@@ -1,7 +1,9 @@
-function HoleCell() {
+export default function HoleCell(props) {
+    
+    
     return (
         <div>
-            <input></input>
+            <input onChange={(e)=> props.updateTotal(e.target.value)}></input>
             hole#
         </div>
     )
