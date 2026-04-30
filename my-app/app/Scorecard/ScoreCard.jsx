@@ -14,7 +14,7 @@ export function ScoreCard() {
 
 
     const updateTotal = (i) => {
-        setTotalScore(i+TotalScore)
+        setTotalScore(Number(i)+TotalScore)
     }
 
     return (
@@ -27,22 +27,22 @@ export function ScoreCard() {
             To Par: {toPar}
             <div id="card">
             <HoleCell className="holeCell" id="hole1" updateTotal={updateTotal}/>
-            <HoleCell className="holeCell" id="hole2"/>
-            <HoleCell className="holeCell" id="hole3"/>
-            <HoleCell className="holeCell" id="hole4"/>
-            <HoleCell className="holeCell" id="hole5"/>
-            <HoleCell className="holeCell" id="hole6"/>
-            <HoleCell className="holeCell" id="hole7"/>
-            <HoleCell className="holeCell" id="hole8"/>
-            <HoleCell className="holeCell" id="hole9"/>
-            <HoleCell className="holeCell" id="hole10"/>
-            <HoleCell className="holeCell" id="hole12"/>
-            <HoleCell className="holeCell" id="hole13"/>
-            <HoleCell className="holeCell" id="hole14"/>
-            <HoleCell className="holeCell" id="hole15"/>
-            <HoleCell className="holeCell" id="hole16"/>
-            <HoleCell className="holeCell" id="hole17"/>
-            <HoleCell className="holeCell" id="hole18"/>
+            <HoleCell className="holeCell" id="hole2" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole3" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole4" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole5" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole6" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole7" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole8" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole9" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole10" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole12" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole13" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole14" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole15" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole16" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole17" updateTotal={updateTotal}/>
+            <HoleCell className="holeCell" id="hole18" updateTotal={updateTotal}/>
             </div>
         </div>
     )
