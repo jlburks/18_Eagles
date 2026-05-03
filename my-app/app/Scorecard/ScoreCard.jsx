@@ -14,7 +14,7 @@ export function ScoreCard() {
 
 
     const updateTotal = (i) => {
-        setTotalScore(Number(i)+TotalScore)
+        setTotalScore(Number(i+TotalScore))
     }
 
     return (

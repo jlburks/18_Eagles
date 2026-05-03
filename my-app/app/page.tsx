@@ -17,6 +17,7 @@ export default function Home() {
           hole: par,playerStrokes
           +-Par e.g. +2, -1, etc.
           Total score */}
+      
       <ScoreCard />
       
           
