@@ -9,7 +9,7 @@ export default function HoleCell(props) {
     
     return (
         <div>
-            <input onChange={(e)=> {setPrevStroke(Number(e.target.value));props.updateTotal(Number(e.target.value) + prevStroke)}}></input>
+            <input onChange={(e)=> {setPrevStroke(Number(e.target.value));props.updateTotal(Number(e.target.value) - prevStroke)}}></input>
             hole#
         </div>
     )

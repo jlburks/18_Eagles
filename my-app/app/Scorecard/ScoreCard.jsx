@@ -48,6 +48,3 @@ export function ScoreCard() {
     )
 }
 
-// set up ScoreCard
-        // assign Scorecard component to hole number
-        // pass function to HoleCell to affect total score
